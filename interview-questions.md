@@ -7,7 +7,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. Why would you use the method `super()`?
 
-  Your answer:
+  Your answer: Super is placed in the constructor of a child's React component so that it can have access to its parent's props.
 
   Researched answer:
 
@@ -15,7 +15,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 2. What is the DOM? What is the virtual DOM?
 
-  Your answer:
+  Your answer: DOM is the Document Object Model. The virtual DOM is the blueprint of the current DOM that is being rendered. React can update the currently loaded webpage without reloading because it only rerenders the portions of the page where the virtual DOM and the current DOM differ.
 
   Researched answer:
 
@@ -23,7 +23,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 3. What is a higher-order function?
 
-  Your answer:
+  Your answer: A higher order function is a function that either takes a function as an argument or returns a function when finished.
 
   Researched answer:
 
@@ -31,13 +31,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 4. What is JSX?
 
-  Your answer:
+  Your answer: JSX is JavaScript Xomething. (Probably not Xtreme. Maybe XML?) It is a combination of JavaScript and XML (which looks a lot like HTML). It allows React to inject and execute JavaScript code in the layout of a website.
 
   Researched answer:
 
 
 
-5. What is React?
+5. What is React? React is a JavaScript library that is used to create highly responsive and dynamic user interfaces.
 
   Your answer:
 
@@ -47,7 +47,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 6. What is yarn? What file(s) are updated when you run `$ yarn`?
 
-  Your answer:
+  Your answer: yarn is a program created by facebook that facilitates building, testing, and debugging React websites.
 
   Researched answer:
 
@@ -55,7 +55,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 7. What is localhost:3000? How do we use localhost:3000 in the development process?
 
-  Your answer:
+  Your answer: localhost:3000 is a port on the user's host computer that can display in progress work on a website in the user's browser.
 
   Researched answer:
 
@@ -63,7 +63,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 8. What is an iterable in JavaScript? What data types are iterables? How can this information useful to you as a developer?
 
-  Your answer:
+  Your answer: Probably something to do with loops since they iterate.
 
   Researched answer:
 
@@ -71,7 +71,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 9. STRETCH: What is hoisting in JavaScript?
 
-  Your answer:
+  Your answer: I have seen this word. Related to React. That's all the context my brain can currently give me. Maybe it's importing / exporting classes and methods between parents and children?
 
   Researched answer:
 
@@ -79,7 +79,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 10. STRETCH: What are closures in JavaScript?
 
-  Your answer:
+  Your answer: If I had to guess I would say semicolons. I do not think that this is a good guess.
 
   Researched answer:
 
