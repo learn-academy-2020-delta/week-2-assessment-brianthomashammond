@@ -12,14 +12,14 @@ var num2 = 0
 var num3 = -7
 // Expected output: "-7 is not divisble by three"
 
-//function that takes a number
+//Write a function that takes in a number
 const divisibleByThree = (number) => {
-  //check if mod is 0
+  //check if number modulo 3 is 0
   if (number % 3 === 0) {
-    //return true stament
+    //return true statement as specified
     return `${number} is divisible by three`
   } else {
-    //return false statement
+    //return false statement as specified
     return `${number} is not divisible by three`
   }
 }
@@ -33,12 +33,14 @@ console.log(divisibleByThree(num3)); //expect "-7 is divisible by three"
 var randomNouns = ["streetlamp", "potato", "teeth", "conclusion", "nephew", "temperature", "database"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew", "Temperature", "Database"]
 
-//function that takes an array of strings
+//Write a function that takes in an array of strings
 const capitalizeWords = (array) => {
-//make new array so as not to destroy original data
-//map over capitalize first letter, add remaining lowercase letters
-  let capitalizedArray = array.map(value => value[0].toUpperCase() + value.slice(1))
-  //return new array
+  //Make a new array so as not to destroy original data
+  //Map over the new array capitalizing first letter of each string
+  let capitalizedArray = array.map(value => value[0].toUpperCase() + 
+  //Add the remaining lowercase letters of each string
+  value.slice(1))
+  //Return the new capitalized array
   return capitalizedArray
 }
 
@@ -49,11 +51,10 @@ console.log(capitalizeWords(randomNouns)); // expect ["Streetlamp", "Potato", "T
 var mixedDataArray = [true, 8, "hello", 90, -8, null, 0, 46, 59, 107, "hey!"]
 // Expected output: [-8, 0, 8, 46, 59, 90, 107]
 
-//Create function that takes in an array of multiple data types
+//Write a function that takes in an array of multiple data types
 const onlyNumbersAscending = (array) => {
-//filter to create new array of numbers
-//sort numbers from least to greatest (needs compare function)
-//return new array
+//Use the filter method with typeof to return a new array of numbers
+//Use the sort method to sort numbers from least to greatest (needs the compare function)
   return array.filter(value => typeof value === "number").sort(function(a, b){return a-b})
 }
 
@@ -72,17 +73,17 @@ var vowelTester3 = "rhythm"
 var vowelTester4 = "yardage"
 // Expected output: 1
 
-//Create a function that takes in a string
+//Write a function that takes in a string
 const firstVowel = (string) => {
-  //make a vowel array excluding y
+  //Make a vowel array excluding y
   const vowels = ["a", "e", "i", "o", "u"]
-  //make an array to hold first indices of each vowel
+  //Make an array to hold the first index of each vowel
   let vowelFirstIndices = []
-  //map over indices per vowel, store first instance of each in an array
+  //Find indices per vowel, store each in the vowelFirstIndices array
   string.split("").map((value, index) => {if (string[index] === "a" || string[index] === "e" || string[index] === "i" || string[index] === "o" || string[index] === "u") {vowelFirstIndices.push(index)}})
-  //find first index of y after index 0
+  //Find the first index of y after index 0, store in the vowelFirstIndices array
   string.split("").map((value, index) => {if (string[index] === "y" && index !== 0) {vowelFirstIndices.push(index)}})
-  //return lowest number from array
+  //Return the lowest number from the vowelFirstIndices array
   return Math.min(...vowelFirstIndices)
 }
 
@@ -93,13 +94,14 @@ console.log(firstVowel(vowelTester4)); //expect: 1
 
 // --------------------5) Create a function that takes three arguments - two numbers and a mathematical operation (+, -, *, /) and performs the given calculation. If the input tries to divide by 0, return: "Can't divide by 0!"
 
-//Create function that takes two numbers and one mathematical operation
+//Write a function that takes in two numbers and one mathematical operation
 const calculator = (number1, operator, number2) => {
-  //Edge case: error message if trying to divide by 0
+  //Check if the user is trying to divide by zero
   if (operator === "/" && number2 === 0) {
+    //If so, return an error message as specified
     return "Can't divide by 0!"
   } else {
-    //Eval arguments in order
+    //Otherwise, use the evaluate method to process the arguments in order
     return eval(`${number1} ${operator} ${number2}`)
   }
 }
@@ -119,9 +121,9 @@ console.log(calculator(89, "/", 0))
 var websites = ["codepen.io", "codecademy.com", "coursera.org", "codepen.io", "udemy.com", "pluralsight.com", "udacity.com", "sitepoint.com"]
 // Expected output: "codepen.io" "codepen.io"
 
-//Create a function that takes an array of strings
+//Create a function that takes in an array of strings
 const ioFinder = (array) => {
-  //Return filtered array of of all strings === end in .io
+  //Use the slice method within the filter method to return a new array of strings where the last three characters are ".io"
   return array.filter(value => value.slice(-3) === ".io")
 }
 
@@ -129,14 +131,16 @@ console.log(ioFinder(websites)); //expect [codepen.io, codepen.io]
 
 // --------------------6) STRETCH: Write a function that takes a number as an argument and uses a WHILE loop to count up to that number from 0.
 
-//Create a function that takes a number
+//Create a function that takes in a number
 const countUp = (number) => {
-  //initialize i to start from 0
-  var i = 0
-  //Use WHILE loop to count 0, 1, 2, number
-  while (i < number + 1) {
-    console.log(i);
-    i++
+  //Initialize a variable to start the count from 0
+  var count = 0
+  //Use a while loop to iterate a total of number + 1 times
+  while (count < number + 1) {
+    //Display the current count in the console
+    console.log(count);
+    //Increment the count
+    count++
   }
 }
 
